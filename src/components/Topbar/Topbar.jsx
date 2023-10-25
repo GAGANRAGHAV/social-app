@@ -1,12 +1,26 @@
 import "./Topbar.css"
-import {Search , Person , Chat , Notifications} from "@mui/icons-material";
+import {Search , Person , Chat , Notifications,} from "@mui/icons-material";
+import CallIcon from '@mui/icons-material/Call';
+import { Link, useNavigate } from 'react-router-dom';
 const Topbar = () => {
+  const navigate = useNavigate();
 
+  const handleCallIconClick = () => {
+    navigate('/contact');
+  };
+
+  const handlePersonClick = () => {
+    navigate('/profile');
+  }
+
+  const handleLogoClick = () => {
+    navigate('/');
+  }
   
   return (
     <>
     <div className="topbarContainer" >
-    <div className="topbarLeft">
+    <div className="topbarLeft" onClick={handleLogoClick}>
       <span className="logo" >
         Lamasocial
       </span>
@@ -31,7 +45,7 @@ const Topbar = () => {
       <div className="topbaricons">
 
         <div className="topbarIconItem">
-        <Person/>
+        <Person onClick={handlePersonClick}/>
         <span className="topbarIconBadge">1</span>
 
       </div>
@@ -44,6 +58,10 @@ const Topbar = () => {
         <Notifications/>
         <span className="topbarIconBadge">1</span>
 
+      </div>
+      <div className="topbarIconItem" onClick={handleCallIconClick}>
+        <CallIcon/>
+        {/* <span className="topbarIconBadge">1</span> */}
       </div>
 
 
