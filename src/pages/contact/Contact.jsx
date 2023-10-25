@@ -1,7 +1,7 @@
 import Topbar from "../../components/Topbar/Topbar";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import Feed from "../../components/Feed/Feed";
-import Rightbar from "../../components/Rightbar/Rightbar";
+// import Feed from "../../components/Feed/Feed";
+// import Rightbar from "../../components/Rightbar/Rightbar";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';

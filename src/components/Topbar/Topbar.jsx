@@ -1,7 +1,7 @@
 import "./Topbar.css"
 import {Search , Person , Chat , Notifications,} from "@mui/icons-material";
 import CallIcon from '@mui/icons-material/Call';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const Topbar = () => {
   const navigate = useNavigate();
 
